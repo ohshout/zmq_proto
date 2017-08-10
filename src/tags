@@ -1,0 +1,124 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DZMQ_ADV_REPEAT_PERIOD	dzmq/impl/config.h	30;"	d
+DZMQ_DISC_PORT	dzmq/impl/config.h	21;"	d
+DZMQ_FLAGS_LENGTH	dzmq/impl/config.h	33;"	d
+DZMQ_INPROC_ADDR	dzmq/impl/config.h	22;"	d
+DZMQ_MAX_ADDR_LENGTH	dzmq/impl/config.h	32;"	d
+DZMQ_MAX_POLL_ITEMS	dzmq/impl/config.h	34;"	d
+DZMQ_MAX_TOPIC_LENGTH	dzmq/impl/config.h	31;"	d
+DZMQ_OP_ADV	dzmq/impl/config.h	25;"	d
+DZMQ_OP_PUB	dzmq/impl/config.h	27;"	d
+DZMQ_OP_SUB	dzmq/impl/config.h	26;"	d
+DZMQ_UDP_MAX_SIZE	dzmq/impl/config.h	29;"	d
+DZMQ__ADV_MSG_H	dzmq/impl/adv_msg.h	18;"	d
+DZMQ__CALLBACK_H	dzmq/impl/callback.h	18;"	d
+DZMQ__CONFIG_H	dzmq/impl/config.h	18;"	d
+DZMQ__CONNECTION_H	dzmq/impl/connection.h	18;"	d
+DZMQ__DZMQ_H	dzmq/dzmq.h	18;"	d
+DZMQ__GUID_H	dzmq/impl/guid.h	18;"	d
+DZMQ__HEADER_H	dzmq/impl/header.h	18;"	d
+DZMQ__IP_H	dzmq/impl/ip.h	18;"	d
+DZMQ__TIMING_H	dzmq/impl/timing.h	18;"	d
+DZMQ__TOPIC_H	dzmq/impl/topic.h	18;"	d
+GUID	dzmq/dzmq.c	/^uuid_t GUID = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};$/;"	v
+GUID_LEN	dzmq/impl/guid.h	22;"	d
+GUID_STR_LEN	dzmq/impl/guid.h	23;"	d
+addr	dzmq/impl/adv_msg.h	/^    char addr[DZMQ_MAX_ADDR_LENGTH];$/;"	m	struct:__anon1
+addr	dzmq/impl/connection.h	/^    char addr[DZMQ_MAX_ADDR_LENGTH];$/;"	m	struct:dzmq_connection_t
+bcast_address	dzmq/dzmq.c	/^char bcast_address[INET_ADDRSTRLEN];$/;"	v
+bcast_fd	dzmq/dzmq.c	/^int bcast_fd;$/;"	v
+callback	dzmq/impl/topic.h	/^    dzmq_msg_callback_t * callback;$/;"	m	struct:dzmq_topic_t
+callback	listener.c	/^void callback(const char * topic_name, const uint8_t * msg, size_t len)$/;"	f
+callback	lonely.c	/^void callback(const char * topic_name, const uint8_t * msg, size_t len)$/;"	f
+connections	dzmq/dzmq.c	/^dzmq_connection_list_t connections;$/;"	v
+convert_timespec_to_ms	dzmq/impl/timing.c	/^long convert_timespec_to_ms(struct timespec * time_spec)$/;"	f
+deserialize_adv_msg	dzmq/impl/adv_msg.c	/^size_t deserialize_adv_msg(dzmq_adv_msg_t * adv_msg, uint8_t * buffer, size_t len)$/;"	f
+deserialize_msg_header	dzmq/impl/header.c	/^size_t deserialize_msg_header(dzmq_msg_header_t * header, uint8_t * buffer, size_t len)$/;"	f
+dst_addr	dzmq/dzmq.c	/^struct sockaddr_in dst_addr, rcv_addr;$/;"	v	typeref:struct:sockaddr_in
+dzmq_addr_in_list	dzmq/impl/connection.c	/^dzmq_connection_t * dzmq_addr_in_list(dzmq_connection_list_t * list, const char * addr)$/;"	f
+dzmq_adv_msg_t	dzmq/impl/adv_msg.h	/^} dzmq_adv_msg_t;$/;"	t	typeref:struct:__anon1
+dzmq_advertise	dzmq/dzmq.c	/^int dzmq_advertise(const char * topic_name)$/;"	f
+dzmq_broadcast_ip_from_address_ip	dzmq/impl/ip.c	/^int dzmq_broadcast_ip_from_address_ip(char * ip_addr, char * bcast_addr)$/;"	f
+dzmq_clear_timer	dzmq/dzmq.c	/^int dzmq_clear_timer()$/;"	f
+dzmq_connection_list_append	dzmq/impl/connection.c	/^int dzmq_connection_list_append(dzmq_connection_list_t * list, int fd, const char * addr)$/;"	f
+dzmq_connection_list_destroy	dzmq/impl/connection.c	/^int dzmq_connection_list_destroy(dzmq_connection_list_t * list)$/;"	f
+dzmq_connection_list_remove	dzmq/impl/connection.c	/^int dzmq_connection_list_remove(dzmq_connection_t * connection)$/;"	f
+dzmq_connection_list_t	dzmq/impl/connection.h	/^} dzmq_connection_list_t;$/;"	t	typeref:struct:__anon2
+dzmq_connection_t	dzmq/impl/connection.h	/^typedef struct dzmq_connection_t {$/;"	s
+dzmq_connection_t	dzmq/impl/connection.h	/^} dzmq_connection_t;$/;"	t	typeref:struct:dzmq_connection_t
+dzmq_fd_in_list	dzmq/impl/connection.c	/^dzmq_connection_t * dzmq_fd_in_list(dzmq_connection_list_t * list, int fd)$/;"	f
+dzmq_get_address_ipv4	dzmq/impl/ip.c	/^int dzmq_get_address_ipv4(char * address)$/;"	f
+dzmq_get_time_now	dzmq/impl/timing.c	/^void dzmq_get_time_now (struct timespec *time)$/;"	f
+dzmq_guid_compare	dzmq/impl/guid.c	/^int dzmq_guid_compare(uuid_t guid, uuid_t other)$/;"	f
+dzmq_guid_to_str	dzmq/impl/guid.c	/^void dzmq_guid_to_str(uuid_t guid, char * guid_str, int guid_str_len)$/;"	f
+dzmq_init	dzmq/dzmq.c	/^int dzmq_init()$/;"	f
+dzmq_msg_callback_t	dzmq/impl/callback.h	/^typedef void (dzmq_msg_callback_t)(const char * topic_name, const uint8_t * msg, size_t len);$/;"	t
+dzmq_msg_header_t	dzmq/impl/header.h	/^} dzmq_msg_header_t;$/;"	t	typeref:struct:__anon3
+dzmq_print_header	dzmq/impl/header.c	/^void dzmq_print_header(dzmq_msg_header_t * header)$/;"	f
+dzmq_publish	dzmq/dzmq.c	/^int dzmq_publish(const char * topic_name, const uint8_t * msg, size_t len)$/;"	f
+dzmq_spin	dzmq/dzmq.c	/^int dzmq_spin()$/;"	f
+dzmq_spin_once	dzmq/dzmq.c	/^int dzmq_spin_once(long timeout)$/;"	f
+dzmq_subscribe	dzmq/dzmq.c	/^int dzmq_subscribe(const char * topic_name, dzmq_msg_callback_t * callback)$/;"	f
+dzmq_time_till	dzmq/impl/timing.c	/^long dzmq_time_till(struct timespec * last_time, long timer_period)$/;"	f
+dzmq_timer	dzmq/dzmq.c	/^int dzmq_timer(dzmq_timer_callback_t * callback, long timer_period_ms)$/;"	f
+dzmq_timer_callback_t	dzmq/impl/callback.h	/^typedef void (dzmq_timer_callback_t)();$/;"	t
+dzmq_topic_in_list	dzmq/impl/topic.c	/^dzmq_topic_t * dzmq_topic_in_list(dzmq_topic_list_t * topic_list, const char * topic_name)$/;"	f
+dzmq_topic_list_append	dzmq/impl/topic.c	/^int dzmq_topic_list_append(dzmq_topic_list_t * topic_list, const char * topic, dzmq_msg_callback_t * callback)$/;"	f
+dzmq_topic_list_destroy	dzmq/impl/topic.c	/^int dzmq_topic_list_destroy(dzmq_topic_list_t * topic_list)$/;"	f
+dzmq_topic_list_remove	dzmq/impl/topic.c	/^int dzmq_topic_list_remove(dzmq_topic_t * topic)$/;"	f
+dzmq_topic_list_t	dzmq/impl/topic.h	/^} dzmq_topic_list_t;$/;"	t	typeref:struct:__anon4
+dzmq_topic_t	dzmq/impl/topic.h	/^typedef struct dzmq_topic_t {$/;"	s
+dzmq_topic_t	dzmq/impl/topic.h	/^} dzmq_topic_t;$/;"	t	typeref:struct:dzmq_topic_t
+fd	dzmq/impl/connection.h	/^    int fd;$/;"	m	struct:dzmq_connection_t
+first	dzmq/impl/connection.h	/^    struct dzmq_connection_t * first;$/;"	m	struct:__anon2	typeref:struct:__anon2::dzmq_connection_t
+first	dzmq/impl/topic.h	/^    struct dzmq_topic_t * first;$/;"	m	struct:__anon4	typeref:struct:__anon4::dzmq_topic_t
+flags	dzmq/impl/header.h	/^    uint8_t flags[DZMQ_FLAGS_LENGTH];$/;"	m	struct:__anon3
+guid	dzmq/impl/header.h	/^    uuid_t guid;$/;"	m	struct:__anon3
+handle_bcast_msg	dzmq/dzmq.c	/^int handle_bcast_msg(uint8_t * buffer, int length)$/;"	f
+header	dzmq/impl/adv_msg.h	/^    dzmq_msg_header_t header;$/;"	m	struct:__anon1
+init_called	dzmq/dzmq.c	/^int init_called = 0;$/;"	v
+ip_address	dzmq/dzmq.c	/^char ip_address[INET_ADDRSTRLEN];$/;"	v
+last	dzmq/impl/connection.h	/^    struct dzmq_connection_t * last;$/;"	m	struct:__anon2	typeref:struct:__anon2::dzmq_connection_t
+last	dzmq/impl/topic.h	/^    struct dzmq_topic_t * last;$/;"	m	struct:__anon4	typeref:struct:__anon4::dzmq_topic_t
+last_timer	dzmq/dzmq.c	/^struct timespec last_timer = {0, 0};$/;"	v	typeref:struct:timespec
+main	listener.c	/^int main(int argc, const char * argv[])$/;"	f
+main	lonely.c	/^int main(int argc, const char * argv[])$/;"	f
+main	talker.c	/^int main(int argc, const char * argv[])$/;"	f
+mreq	dzmq/dzmq.c	/^struct ip_mreq mreq;$/;"	v	typeref:struct:ip_mreq
+name	dzmq/impl/topic.h	/^    char name[DZMQ_MAX_TOPIC_LENGTH];$/;"	m	struct:dzmq_topic_t
+next	dzmq/impl/connection.h	/^    struct dzmq_connection_t * next;$/;"	m	struct:dzmq_connection_t	typeref:struct:dzmq_connection_t::dzmq_connection_t
+next	dzmq/impl/topic.h	/^    struct dzmq_topic_t * next;$/;"	m	struct:dzmq_topic_t	typeref:struct:dzmq_topic_t::dzmq_topic_t
+poll_items	dzmq/dzmq.c	/^zmq_pollitem_t poll_items[DZMQ_MAX_POLL_ITEMS];$/;"	v
+poll_items_count	dzmq/dzmq.c	/^size_t poll_items_count = 0;$/;"	v
+prev	dzmq/impl/connection.h	/^    struct dzmq_connection_t * prev;$/;"	m	struct:dzmq_connection_t	typeref:struct:dzmq_connection_t::dzmq_connection_t
+prev	dzmq/impl/topic.h	/^    struct dzmq_topic_t * prev;$/;"	m	struct:dzmq_topic_t	typeref:struct:dzmq_topic_t::dzmq_topic_t
+publish_callback	lonely.c	/^void publish_callback()$/;"	f
+publish_callback	talker.c	/^void publish_callback()$/;"	f
+published_topics	dzmq/dzmq.c	/^dzmq_topic_list_t published_topics;$/;"	v
+rcv_addr	dzmq/dzmq.c	/^struct sockaddr_in dst_addr, rcv_addr;$/;"	v	typeref:struct:
+register_file_descriptor	dzmq/dzmq.c	/^int register_file_descriptor(int fd)$/;"	f
+register_socket	dzmq/dzmq.c	/^int register_socket(void * socket)$/;"	f
+send_adv	dzmq/dzmq.c	/^int send_adv(const char * topic_name)$/;"	f
+send_sub	dzmq/dzmq.c	/^int send_sub(const char * topic_name)$/;"	f
+sendto_bcast	dzmq/dzmq.c	/^int sendto_bcast(unsigned char * buffer, size_t buffer_len)$/;"	f
+seq	lonely.c	/^size_t seq = 0;$/;"	v
+seq	talker.c	/^size_t seq = 0;$/;"	v
+serialize_adv_msg	dzmq/impl/adv_msg.c	/^size_t serialize_adv_msg(uint8_t * buffer, dzmq_adv_msg_t * adv_msg)$/;"	f
+serialize_msg_header	dzmq/impl/header.c	/^size_t serialize_msg_header(uint8_t * buffer, dzmq_msg_header_t * header)$/;"	f
+subscribed_topics	dzmq/dzmq.c	/^dzmq_topic_list_t subscribed_topics;$/;"	v
+tcp_address	dzmq/dzmq.c	/^char tcp_address[DZMQ_MAX_ADDR_LENGTH];$/;"	v
+timer_callback	dzmq/dzmq.c	/^dzmq_timer_callback_t * timer_callback = 0;$/;"	v
+timer_period	dzmq/dzmq.c	/^long timer_period = 0;$/;"	v
+topic	dzmq/impl/header.h	/^    char topic[DZMQ_MAX_TOPIC_LENGTH];$/;"	m	struct:__anon3
+topic_name	lonely.c	/^const char * topic_name;$/;"	v
+topic_name	talker.c	/^const char * topic_name;$/;"	v
+type	dzmq/impl/header.h	/^    uint8_t type;$/;"	m	struct:__anon3
+version	dzmq/impl/header.h	/^    uint16_t version;$/;"	m	struct:__anon3
+zmq_context	dzmq/dzmq.c	/^void * zmq_context;$/;"	v
+zmq_publish_sock	dzmq/dzmq.c	/^void * zmq_publish_sock;$/;"	v
+zmq_subscribe_sock	dzmq/dzmq.c	/^void * zmq_subscribe_sock;$/;"	v
